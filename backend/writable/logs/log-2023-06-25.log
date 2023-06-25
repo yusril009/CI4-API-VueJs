@@ -1,0 +1,102 @@
+ERROR - 2023-06-25 13:32:40 --> mysqli_sql_exception: Table 'db_storage.barang' doesn't exist in C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\app\Controllers\BarangController.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\CodeIgniter.php(932): App\Controllers\BarangController->index()
+#8 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+#9 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\YUSRIL...')
+#12 {main}
+CRITICAL - 2023-06-25 13:32:40 --> Table 'db_storage.barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\BarangController.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\YUSRIL\\Documents\\Kuliah\\Semester 6\\Teknologi web\\FullStackCodeIgniter4VueJS-main\\backend\\public\\index.php')
+CRITICAL - 2023-06-25 13:55:18 --> Class 'Config\App\Filters\Cors' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('barang', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\YUSRIL\\Documents\\Kuliah\\Semester 6\\Teknologi web\\FullStackCodeIgniter4VueJS-main\\backend\\public\\index.php')
+CRITICAL - 2023-06-25 13:55:31 --> Class 'Config\App\Filters\Cors' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('barang', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\YUSRIL\\Documents\\Kuliah\\Semester 6\\Teknologi web\\FullStackCodeIgniter4VueJS-main\\backend\\public\\index.php')
+CRITICAL - 2023-06-25 13:55:51 --> Class 'Config\App\Filters\Cors' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('barang', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\YUSRIL\\Documents\\Kuliah\\Semester 6\\Teknologi web\\FullStackCodeIgniter4VueJS-main\\backend\\public\\index.php')
+CRITICAL - 2023-06-25 14:15:44 --> syntax error, unexpected 'Config' (T_STRING), expecting ')'
+in APPPATH\Config\Routes.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\YUSRIL\\Documents\\Kuliah\\Semester 6\\Teknologi web\\FullStackCodeIgniter4VueJS-main\\backend\\public\\index.php')
+CRITICAL - 2023-06-25 15:04:00 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH\Filters\Cors.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\YUSRIL\\Documents\\Kuliah\\Semester 6\\Teknologi web\\FullStackCodeIgniter4VueJS-main\\backend\\app\\Filters\\Cors.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Cors')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Cors')
+ 4 SYSTEMPATH\Filters\Filters.php(166): spl_autoload_call('App\\Filters\\Cors')
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('barang', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\YUSRIL\\Documents\\Kuliah\\Semester 6\\Teknologi web\\FullStackCodeIgniter4VueJS-main\\backend\\public\\index.php')
+CRITICAL - 2023-06-25 15:04:17 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH\Filters\Cors.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\YUSRIL\\Documents\\Kuliah\\Semester 6\\Teknologi web\\FullStackCodeIgniter4VueJS-main\\backend\\app\\Filters\\Cors.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Cors')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Cors')
+ 4 SYSTEMPATH\Filters\Filters.php(166): spl_autoload_call('App\\Filters\\Cors')
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('barang', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\YUSRIL\\Documents\\Kuliah\\Semester 6\\Teknologi web\\FullStackCodeIgniter4VueJS-main\\backend\\public\\index.php')
+CRITICAL - 2023-06-25 15:04:27 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH\Filters\Cors.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\YUSRIL\\Documents\\Kuliah\\Semester 6\\Teknologi web\\FullStackCodeIgniter4VueJS-main\\backend\\app\\Filters\\Cors.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Cors')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Cors')
+ 4 SYSTEMPATH\Filters\Filters.php(166): spl_autoload_call('App\\Filters\\Cors')
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('barang', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\YUSRIL\\Documents\\Kuliah\\Semester 6\\Teknologi web\\FullStackCodeIgniter4VueJS-main\\backend\\public\\index.php')
+ERROR - 2023-06-25 17:43:37 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\app\Database\Migrations\2023-06-25-131038_TblBarang.php(20): CodeIgniter\Database\Forge->createTable('tbl_barang')
+#5 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Database\MigrationRunner.php(877): App\Database\Migrations\TblBarang->up()
+#6 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\YUSRIL\Documents\Kuliah\Semester 6\Teknologi web\FullStackCodeIgniter4VueJS-main\backend\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
