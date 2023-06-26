@@ -8,16 +8,25 @@ const routes = [
     path: "/",
     name: "BarangList",
     component: BarangList,
+    meta: {
+      title: "WEBSITE BARANG LIST",
+    },
   },
   {
     path: "/add",
     name: "AddBarang",
     component: AddBarang,
+    meta: {
+      title: "WEBSITE BARANG LIST",
+    },
   },
   {
     path: "/edit/:id",
     name: "EditBarang",
     component: EditBarang,
+    meta: {
+      title: "WEBSITE BARANG LIST",
+    },
   },
 ];
 
